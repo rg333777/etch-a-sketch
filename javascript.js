@@ -18,3 +18,13 @@ function generateGrid(grid_size) {
 
 generateGrid(grid_size)
 
+function changeColor() {
+    let square = document.querySelectorAll('.square')
+    square.forEach((square) => {
+        square.addEventListener('mouseover', () => {
+            square.style.backgroundColor = 'red'
+        }) 
+    })
+}
+
+changeColor()
